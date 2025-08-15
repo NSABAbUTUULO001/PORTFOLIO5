@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0a0a14;
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.App {
+  min-height: 100vh;
+  background: #0a0a14;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #27be33 0%, #68c52b 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #21cc54 0%, #4eca14 100%);
+}
+
+/* Selection color */
+::selection {
+  background: rgb(66, 206, 38);
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: rgb(17, 214, 132);
+  color: #ffffff;
+}
+
+/* Focus styles */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #43cf1f;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for all interactive elements */
+button,
+a,
+input,
+textarea,
+select {
+  transition: all 0.3s ease;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  body {
+    background: #000000;
+    color: #ffffff;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .App {
+    background: white;
+  }
+  
+  /* Hide interactive elements in print */
+  button,
+  nav,
+  header,
+  footer {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+  h1, h2, h3 {
+    font-size: 1.2em;
+  }
+  .container, .section {
+    padding: 1rem 0.5rem;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+html, body {
+  width: 100vw;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+
+
