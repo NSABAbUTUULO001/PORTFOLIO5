@@ -5,6 +5,9 @@ const ServicesSection = styled.section`
   padding: 8rem 2rem;
   background: linear-gradient(135deg, #00e913ff 0%, #1a5303ff 100% );
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Container = styled.div`
