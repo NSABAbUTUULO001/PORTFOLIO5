@@ -52,6 +52,10 @@ const ContactInfo = styled.div`
   border-radius: 20px;
   padding: 3rem;
   border: 1px solid rgba(102, 126, 234, 0.1);
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
 `;
 
 const InfoTitle = styled.h3`
@@ -150,6 +154,10 @@ const ContactForm = styled.form`
   border-radius: 20px;
   padding: 3rem;
   border: 1px solid rgba(102, 126, 234, 0.1);
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
 `;
 
 const FormTitle = styled.h3`
