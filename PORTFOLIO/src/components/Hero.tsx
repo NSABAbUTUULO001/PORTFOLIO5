@@ -19,6 +19,7 @@ const HeroSection = styled.section`
   justify-content: center;
   background: linear-gradient(-45deg, #00ff37ff, #33ff00ff, #7de64cff, #0f3460);
   background-size: 400% 400%;
+  background-attachment: fixed;
   animation: ${gradient} 15s ease infinite;
   position: relative;
   overflow: hidden;
